@@ -3,7 +3,7 @@ import streamlit as st
 st.sidebar.header("Navigation")
 
 pages=['A','B','C']
-choice=st.sidebar.radio('Navigation',pages)
+page=st.sidebar.radio('Navigation',pages)
 
 if page=='A':
    st.write('A selcted')
