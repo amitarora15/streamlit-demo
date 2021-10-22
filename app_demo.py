@@ -1,5 +1,6 @@
 import streamlit as st
-import streamlit_pages.streamlit_pages import MultiPage
+import streamlit_pages.streamlit_pages 
+import MultiPage
 
 def home():
     st.write("Welcome to home page")
@@ -8,7 +9,7 @@ def home():
 
 
 def about():
-:wq    st.write("Welcome to about page")
+    st.write("Welcome to about page")
     if st.button("Click about"):
         st.write("Welcome to About page")
 
