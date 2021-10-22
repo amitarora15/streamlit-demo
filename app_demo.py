@@ -1,29 +1,17 @@
 import streamlit as st
-import streamlit_pages.streamlit_pages 
-import MultiPage
 
-def home():
-    st.write("Welcome to home page")
-    if st.button("Click Home"):
-        st.write("Welcome to home page")
+st.sidebar.header("Navigation")
 
+pages=['A','B','C']
+choice=st.sidebar.radio('Navigation',pages)
 
-def about():
-    st.write("Welcome to about page")
-    if st.button("Click about"):
-        st.write("Welcome to About page")
+if page=='A':
+   st.write('A selcted')
+elif page=='B':
+   st.write('B selected')
+else:
+   st.write('C')
 
+st.sidebar.header("Contributor")
+st.sidebar.write('Amit')
 
-def contact():
-    st.write("Welcome to contact page")
-    if st.button("Click Contact"):
-        st.write("Welcome to contact page")
-
-
-# call app class object
-app = MultiPage()
-# Add pages
-app.add_page("Home",home)
-app.add_page("About",about)
-app.add_page("Contact",contact)
-app.run()
